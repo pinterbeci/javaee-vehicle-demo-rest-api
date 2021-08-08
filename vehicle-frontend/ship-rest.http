@@ -38,3 +38,7 @@ GET http://localhost:8080/api/ship/2
 Accept: application/json
 
 ###
+GET http://localhost:8080/api/ship/find/1
+Accept: application/json
+
+###

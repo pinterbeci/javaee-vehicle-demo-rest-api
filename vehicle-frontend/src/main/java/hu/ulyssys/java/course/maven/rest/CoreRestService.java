@@ -34,7 +34,7 @@ public abstract class CoreRestService<T extends AbstractVehicle, M extends CoreR
     @GET
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response findAll(@PathParam("id") Long id) {
+    public Response findVehicleByOwnerID(@PathParam("id") Long id) {
         Owner owner = ownerService.findById(id);
 
         if (owner == null) {
@@ -44,6 +44,19 @@ public abstract class CoreRestService<T extends AbstractVehicle, M extends CoreR
         return Response.ok(service.getAll().stream().filter(e -> e.getOwner().equals(owner)).
                 collect(Collectors.toList())).build();
     }
+    @GET
+    @Path("/find/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response findVehicleByID(@PathParam("id") Long id) {
+        T entity = service.findById(id);
+
+        if( entity == null ){
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.ok(entity).build();
+    }
+
 
 
     @POST

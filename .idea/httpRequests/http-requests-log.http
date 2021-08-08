@@ -1,3 +1,38 @@
+GET http://localhost:8080/api/owner/find/1
+Accept: application/json
+
+<> 2021-08-08T210313.200.json
+
+###
+
+GET http://localhost:8080/api/ship/find/1
+Accept: application/json
+
+<> 2021-08-08T210027.200.json
+
+###
+
+GET http://localhost:8080/api/plane/find/2
+Accept: application/json
+
+<> 2021-08-08T205959.200.json
+
+###
+
+GET http://localhost:8080/api/owner/find/1
+Accept: application/json
+
+<> 2021-08-08T205919.404.html
+
+###
+
+GET http://localhost:8080/api/car/find/3
+Accept: application/json
+
+<> 2021-08-08T205823.200.json
+
+###
+
 GET http://localhost:8080/api/ship/2
 Accept: application/json
 
@@ -411,55 +446,6 @@ GET http://localhost:8080/api/car
 Accept: application/json
 
 <> 2021-08-08T114047.200.json
-
-###
-
-GET http://localhost:8080/api/ship
-Accept: application/json
-
-<> 2021-08-08T113931.200.json
-
-###
-
-GET http://localhost:8080/api/car
-Accept: application/json
-
-<> 2021-08-08T113920.200.json
-
-###
-
-PUT http://localhost:8080/api/car
-Content-Type: application/json
-
-{
-  "id": 15,
-  "name": "name-03",
-  "manufacturer": "manufacturer-06",
-  "doorNumbers": 9,
-  "licencePlateNumber": "plk-663",
-  "onwerID": 1
-}
-
-###
-
-PUT http://localhost:8080/api/car
-Content-Type: application/json
-
-{
-  "id": 15,
-  "name": "name-03",
-  "manufacturer": "manufacturer-06",
-  "doorNumbers": 9,
-  "licencePlateNumber": "plk-663",
-  "ownerID": 1
-}
-
-###
-
-GET http://localhost:8080/api/car
-Accept: application/json
-
-<> 2021-08-08T113604.200.json
 
 ###
 

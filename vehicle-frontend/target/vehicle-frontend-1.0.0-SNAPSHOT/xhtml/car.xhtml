@@ -3,7 +3,9 @@
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:composite="http://java.sun.com/jsf/composite"
       xml:lang="en" lang="en">
 <h:head>
     <title>CAR demo</title>
@@ -16,6 +18,7 @@
     <p:growl id="growl" showDetail="false"/>
     <p:toolbar>
         <p:toolbarGroup>
+
             <p:commandButton id="add" icon="pi pi-plus" process="@this" value="Új hozzáadása"
                              actionListener="#{carCRUDMBean.initSave}" update="@([id$=carForm])"
                              oncomplete="PF('carDialog').show()"/>
@@ -109,8 +112,8 @@
 
             <p:outputLabel value="Gyártó"/>
             <p:inputText maxValue="100" thousandSeparator="" decimalPlaces="0"
-                           value="#{carCRUDMBean.selectedEntity.manufacturer}" required="true"
-                           requiredMessage="A Gyártó kötelező"/>
+                         value="#{carCRUDMBean.selectedEntity.manufacturer}" required="true"
+                         requiredMessage="A Gyártó kötelező"/>
 
             <p:outputLabel value="Rendszám"/>
             <p:inputText maxValue="100" thousandSeparator="" decimalPlaces="0"

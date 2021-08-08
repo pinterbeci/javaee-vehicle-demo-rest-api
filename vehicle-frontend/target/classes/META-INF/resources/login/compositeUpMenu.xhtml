@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:composite="http://xmlns.jcp.org/jsf/composite" xmlns:p="http://primefaces.org/ui"
+      xml:lang="en" lang="en">
+<h:head>
+    <title>Title</title>
+</h:head>
+<h:body>
+
+    <composite:interface>
+        <composite:attribute name="addButtonAction"/>
+        <composite:attribute name="deleteButtonAction"/>
+        <composite:attribute name="updateButtonAction"/>
+        <composite:attribute name="columntTogglerButtonAction"/>
+        <composite:attribute name="xlsExport"/>
+        <composite:attribute name="xlsxstreamExport"/>
+        <composite:attribute name="pdfExport"/>
+
+    </composite:interface>
+
+
+    <composite:implementation>
+        <h:form>
+
+            <h:commandButton action="#{cc.attrs.addButtonAction}"
+                             value="#{cc.attrs.addButtonAction}"/>
+
+            <h:commandButton action="#{cc.attrs.deleteButtonAction}"
+                             value="#{cc.attrs.deleteButtonAction}"/>
+
+            <h:commandButton action="#{cc.attrs.updateButtonAction}"
+                             value="#{cc.attrs.updateButtonAction}"/>
+
+
+        </h:form>
+    </composite:implementation>
+
+</h:body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "id": 3,
+  "licencePlateNumber": "ter-666",
+  "manufacturer": "manufacturer-03",
+  "name": "name-2",
+  "owner": {
+    "id": 3,
+    "fullName": "Kálmán a legkiváló Nepper",
+    "registrationDate": "2021-01-03T23:00:00Z[UTC]"
+  },
+  "doorNumbers": 4,
+  "vehicleType": "Car"
+}

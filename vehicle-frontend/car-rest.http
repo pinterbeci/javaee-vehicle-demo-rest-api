@@ -7,6 +7,10 @@ GET http://localhost:8080/api/car/1
 Accept: application/json
 
 ###
+GET http://localhost:8080/api/car/find/3
+Accept: application/json
+
+###
 
 
 PUT http://localhost:8080/api/car

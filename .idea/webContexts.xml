@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/compositeUpMenu.xhtml" value="file://$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml" />
+        <entry key="file://$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/loginHome.xhtml" value="file://$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml" />
+      </map>
+    </option>
+  </component>
+</project>

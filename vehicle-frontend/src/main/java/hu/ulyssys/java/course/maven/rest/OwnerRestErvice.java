@@ -24,6 +24,19 @@ public class OwnerRestErvice {
         return Response.ok(ownerService.getAll().stream().map(this::createModelFromEntity).
                 collect(Collectors.toList())).build();
     }
+    @GET
+    @Path("/find/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response findVehicleByID(@PathParam("id") Long id) {
+        Owner owner = new Owner();
+        owner = ownerService.findById(id);
+
+        if( owner == null ){
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.ok(owner).build();
+    }
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
