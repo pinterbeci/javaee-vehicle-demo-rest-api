@@ -1,0 +1,28 @@
+[
+  {
+    "id": 3,
+    "licencePlateNumber": "hzhhh-666",
+    "manufacturer": "ship manufacturer-03",
+    "name": "ship-02",
+    "owner": {
+      "id": 1,
+      "fullName": "Pintér Béla",
+      "registrationDate": "2020-02-01T23:00:00Z[UTC]"
+    },
+    "vehicleType": "Ship",
+    "weight": 5000
+  },
+  {
+    "id": 4,
+    "licencePlateNumber": "adsasd",
+    "manufacturer": "44sdd",
+    "name": "nam",
+    "owner": {
+      "id": 1,
+      "fullName": "Pintér Béla",
+      "registrationDate": "2020-02-01T23:00:00Z[UTC]"
+    },
+    "vehicleType": "Ship",
+    "weight": 4444
+  }
+]

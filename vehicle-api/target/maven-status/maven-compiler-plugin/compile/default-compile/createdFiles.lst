@@ -1,0 +1,15 @@
+hu\ulyssys\java\course\maven\service\OwnerService.class
+hu\ulyssys\java\course\maven\entity\Plane.class
+hu\ulyssys\java\course\maven\entity\AbstractVehicle.class
+hu\ulyssys\java\course\maven\entity\Car.class
+hu\ulyssys\java\course\maven\service\ShipService.class
+hu\ulyssys\java\course\maven\service\CarService.class
+hu\ulyssys\java\course\maven\entity\VehicleType.class
+hu\ulyssys\java\course\maven\entity\VehicleTypeAware.class
+hu\ulyssys\java\course\maven\service\XLSExportService.class
+hu\ulyssys\java\course\maven\service\CoreService.class
+hu\ulyssys\java\course\maven\entity\AbstractEntity.class
+hu\ulyssys\java\course\maven\service\PDFExportService.class
+hu\ulyssys\java\course\maven\service\PlaneService.class
+hu\ulyssys\java\course\maven\entity\Owner.class
+hu\ulyssys\java\course\maven\entity\Ship.class

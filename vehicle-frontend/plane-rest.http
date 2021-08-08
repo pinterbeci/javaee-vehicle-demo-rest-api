@@ -1,0 +1,36 @@
+GET http://localhost:8080/api/plane
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/api/plane
+Content-Type: application/json
+
+{
+  "id": 2,
+  "licencePlateNumber": "pln-001",
+  "name": "plane-01",
+  "onwerID": 2
+}
+
+###
+
+POST http://localhost:8080/api/plane
+Content-Type: application/json
+
+{
+  "licencePlateNumber": "uiz-011",
+  "name": "plane-010",
+  "onwerID": 2
+}
+
+###
+DELETE http://localhost:8080/api/plane/3
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/plane/2
+Accept: application/json
+
+###

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "licencePlateNumber": "ter-666",
+    "manufacturer": "manufacturer-01",
+    "name": "name-11",
+    "owner": {
+      "id": 1,
+      "fullName": "Pintér Béla",
+      "registrationDate": "2020-02-01T23:00:00Z[UTC]"
+    },
+    "type": "CAR",
+    "doorNumbers": 55,
+    "vehicleType": "Car"
+  }
+]

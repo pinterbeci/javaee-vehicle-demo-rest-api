@@ -1,0 +1,40 @@
+GET http://localhost:8080/api/ship
+Accept: application/json
+
+###
+
+
+
+POST http://localhost:8080/api/ship
+Content-Type: application/json
+
+{
+  "licencePlateNumber": "ter-6366",
+  "name": "ship-02",
+  "onwerID": 3,
+  "weight": 500
+}
+
+###
+
+PUT http://localhost:8080/api/ship
+Content-Type: application/json
+
+{
+  "id": 2,
+  "licencePlateNumber": "shp-002",
+  "name": "ship-012",
+  "onwerID": 2
+}
+
+###
+
+DELETE http://localhost:8080/api/ship/2
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/ship/2
+Accept: application/json
+
+###

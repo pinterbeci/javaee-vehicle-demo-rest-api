@@ -1,0 +1,23 @@
+[
+  {
+    "id": 2,
+    "licencePlateNumber": "pln-001",
+    "name": "plane-01",
+    "onwerID": 2,
+    "passengerNumbers": 0
+  },
+  {
+    "id": 3,
+    "licencePlateNumber": "rtt-999",
+    "name": "plane-09",
+    "onwerID": 9,
+    "passengerNumbers": 0
+  },
+  {
+    "id": 4,
+    "licencePlateNumber": "tre-010",
+    "name": "plane-010",
+    "onwerID": 2,
+    "passengerNumbers": 0
+  }
+]

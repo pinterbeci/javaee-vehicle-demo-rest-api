@@ -1,0 +1,27 @@
+GET http://localhost:8080/api/owner
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/api/owner
+Content-Type: application/json
+
+{
+  "id": 3,
+  "fullName": "Kálmán a kiváló Nepper"
+}
+
+###
+
+POST http://localhost:8080/api/owner
+Content-Type: application/json
+
+{
+ "fullName" : "Réti Virág"
+}
+
+###
+DELETE http://localhost:8080/api/owner/6
+Accept: application/json
+
+###

@@ -1,0 +1,39 @@
+[
+  {
+    "id": 2,
+    "licencePlateNumber": "pln-001",
+    "manufacturer": "plane manufacturer-02",
+    "name": "plane-01",
+    "owner": {
+      "id": 2,
+      "fullName": "Kalim Pál Ó",
+      "registrationDate": "2021-04-04T22:00:00Z[UTC]"
+    },
+    "passengerNumbers": 600,
+    "vehicleType": "Plane"
+  },
+  {
+    "id": 4,
+    "licencePlateNumber": "tre-010",
+    "name": "plane-010",
+    "owner": {
+      "id": 2,
+      "fullName": "Kalim Pál Ó",
+      "registrationDate": "2021-04-04T22:00:00Z[UTC]"
+    },
+    "passengerNumbers": 0,
+    "vehicleType": "Plane"
+  },
+  {
+    "id": 5,
+    "licencePlateNumber": "uiz-011",
+    "name": "plane-010",
+    "owner": {
+      "id": 2,
+      "fullName": "Kalim Pál Ó",
+      "registrationDate": "2021-04-04T22:00:00Z[UTC]"
+    },
+    "passengerNumbers": 0,
+    "vehicleType": "Plane"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "licencePlateNumber": "ter-6366",
+    "manufacturer": "ship manufacturer-02",
+    "name": "ship-01",
+    "owner": {
+      "id": 2,
+      "fullName": "Kalim Pál Ó",
+      "registrationDate": "2021-04-04T22:00:00Z[UTC]"
+    },
+    "vehicleType": "Ship",
+    "weight": 1000
+  },
+  {
+    "id": 5,
+    "licencePlateNumber": "asdasd",
+    "manufacturer": "asdas",
+    "name": "asdas",
+    "owner": {
+      "id": 2,
+      "fullName": "Kalim Pál Ó",
+      "registrationDate": "2021-04-04T22:00:00Z[UTC]"
+    },
+    "vehicleType": "Ship",
+    "weight": 555
+  }
+]

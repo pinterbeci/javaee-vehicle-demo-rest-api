@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui"
+      xml:lang="en" lang="en">
+<h:head>
+    <title>CAR demo</title>
+</h:head>
+<body>
+<h:form id="form" style="margin: 20px auto;">
+
+    <ui:include src="upMenu.xhtml"/>
+    <br/>
+    <p:growl id="growl" showDetail="false"/>
+    <p:toolbar>
+        <p:toolbarGroup>
+            <p:commandButton id="add" icon="pi pi-plus" process="@this" value="Új hozzáadása"
+                             actionListener="#{carCRUDMBean.initSave}" update="@([id$=carForm])"
+                             oncomplete="PF('carDialog').show()"/>
+            <p:commandButton disabled="#{carCRUDMBean.selectedEntity.id==null}" id="delete" icon="pi pi-times"
+                             process="@this" value="Törlés" actionListener="#{carCRUDMBean.remove}" update="@form">
+                <p:confirm header="Törlés" message="Biztos vagy benne?" icon="pi pi-times"/>
+            </p:commandButton>
+            <p:commandButton disabled="#{carCRUDMBean.selectedEntity.id==null}" id="update" process="@this"
+                             value="Módosítás" icon="pi pi-pencil" update="@([id$=carForm])"
+                             oncomplete="PF('carDialog').show()"/>
+        </p:toolbarGroup>
+        <p:toolbarGroup align="right">
+            <p:commandButton id="columntTogglerBtn" icon="pi pi-table"/>
+
+            <p:columnToggler id="columntToggler" trigger="columntTogglerBtn" datasource="table"/>
+
+            <p:commandButton value="XLS" styleClass="p-mr-2 p-mb-2">
+                <p:dataExporter type="xls" target="table" fileName="export"/>
+            </p:commandButton>
+
+            <p:commandButton value="XLXS" styleClass="p-mr-2 p-mb-2">
+                <p:dataExporter type="xlsxstream" target="table" fileName="export"/>
+            </p:commandButton>
+
+            <!-- TODO Utf-8 karakter -->
+            <p:commandButton value="PDF" styleClass="p-mr-2 p-mb-2">
+                <p:dataExporter type="pdf" target="table" fileName="export"/>
+            </p:commandButton>
+        </p:toolbarGroup>
+    </p:toolbar>
+
+    <p:dataTable id="table" value="#{carCRUDMBean.list}" var="car" rows="10"
+                 paginator="true" selectionMode="single" selection="#{carCRUDMBean.selectedEntity}" rowKey="#{car.id}"
+                 paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                 currentPageReportTemplate="{startRecord}-{endRecord} of {totalRecords} records"
+                 rowsPerPageTemplate="5,10,{ShowAll|'All'}">
+        <p:ajax event="rowSelect" update="@form"/>
+        <p:column style="width:2rem" exportable="false">
+            <p:rowToggler/>
+        </p:column>
+        <p:column toggleable="false" sortBy="#{car.id}" filterBy="#{car.id}" filterMatchMode="contains" headerText="ID">
+            <h:outputText value="#{car.id}"/>
+        </p:column>
+
+        <p:column sortBy="#{car.name}" filterBy="#{car.name}" filterMatchMode="contains"
+                  headerText="Név">
+            <h:outputText value="#{car.name}"/>
+        </p:column>
+
+        <p:column sortBy="#{car.vehicleType}" filterBy="#{car.vehicleType}" filterMatchMode="contains"
+                  headerText="Típus">
+            <h:outputText value="#{car.vehicleType}"/>
+        </p:column>
+        <p:column sortBy="#{car.manufacturer}" filterBy="#{car.manufacturer}" filterMatchMode="contains"
+                  headerText="Gyártó">
+            <h:outputText value="#{car.manufacturer}"/>
+        </p:column>
+        <p:column sortBy="#{car.doorNumbers}" filterBy="#{car.doorNumbers}" filterMatchMode="contains"
+                  headerText="Ajtók száma">
+            <h:outputText value="#{car.doorNumbers}"/>
+        </p:column>
+        <p:column sortBy="#{car.licencePlateNumber}" filterBy="#{car.licencePlateNumber}" filterMatchMode="contains"
+                  headerText="Rendszám">
+            <h:outputText value="#{car.licencePlateNumber}"/>
+        </p:column>
+
+        <p:column sortBy="#{car.owner.fullName}" filterBy="#{car.owner.fullName}" filterMatchMode="contains"
+                  headerText="Tulajdonos">
+            <h:outputText value="#{car.owner.fullName}"/>
+        </p:column>
+
+
+    </p:dataTable>
+
+    <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" responsive="true" width="350">
+        <p:commandButton value="Nem" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
+        <p:commandButton value="Igen" type="button" styleClass="ui-confirmdialog-yes"/>
+    </p:confirmDialog>
+</h:form>
+
+<p:dialog id="carDialog" widgetVar="carDialog" header="Form" modal="true" closable="true">
+    <h:form id="carForm">
+        <p:panelGrid layout="grid" columns="2" id="formPanel" style="width: 600px">
+            <p:outputLabel value="Név"/>
+            <p:inputText value="#{carCRUDMBean.selectedEntity.name}" required="true" requiredMessage="Név kötelező"/>
+
+            <p:outputLabel value="Ajtók száma"/>
+            <p:inputNumber maxValue="100" thousandSeparator="" decimalPlaces="0"
+                           value="#{carCRUDMBean.selectedEntity.doorNumbers}" required="true"
+                           requiredMessage="Ajtók száma kötelező"/>
+
+            <p:outputLabel value="Gyártó"/>
+            <p:inputText maxValue="100" thousandSeparator="" decimalPlaces="0"
+                           value="#{carCRUDMBean.selectedEntity.manufacturer}" required="true"
+                           requiredMessage="A Gyártó kötelező"/>
+
+            <p:outputLabel value="Rendszám"/>
+            <p:inputText maxValue="100" thousandSeparator="" decimalPlaces="0"
+                         value="#{carCRUDMBean.selectedEntity.licencePlateNumber}" required="true"
+                         requiredMessage="A Rendszám kötelező"/>
+
+            <p:outputLabel value="Tulajdonos"/>
+            <p:selectOneMenu value="#{carCRUDMBean.selectedEntity.owner}" converter="#{appOwnerConverter}">
+                <f:selectItem itemValue="#{null}" itemLabel="Kérem válasszon"/>
+                <f:selectItems value="#{carCRUDMBean.ownerList}" var="owner" itemLabel="#{owner.fullName}"
+                               itemValue="#{owner}"/>
+            </p:selectOneMenu>
+            <p:commandButton value="Mentés" icon="pi pi-save" actionListener="#{carCRUDMBean.save()}"
+                             process="formPanel" update=":form"/>
+        </p:panelGrid>
+    </h:form>
+</p:dialog>
+
+<!-- 2. inplace edit plane-en -->
+<!-- 3. Felugró ablakos űrlapot külön formmal -->
+<!-- 4. nyelvesítés-->
+
+
+</body>
+</html>
