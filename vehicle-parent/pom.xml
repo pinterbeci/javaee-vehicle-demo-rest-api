@@ -17,6 +17,7 @@
         <module>../vehicle-api</module>
         <module>../vehicle-backend</module>
         <module>../vehicle-frontend</module>
+        <module>../vehicle-export-backend</module>
         <module>../vehicle-ear</module>
     </modules>
     <build>

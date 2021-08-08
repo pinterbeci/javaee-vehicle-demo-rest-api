@@ -5,6 +5,9 @@
     <ejb>vehicle-backend.jar</ejb>
   </module>
   <module>
+    <ejb>vehicle-export-backend.jar</ejb>
+  </module>
+  <module>
     <web>
       <web-uri>vehicle-frontend.war</web-uri>
       <context-root>/</context-root>

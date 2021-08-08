@@ -22,6 +22,12 @@
 
         <dependency>
             <groupId>hu.ulyssys.java.course</groupId>
+            <artifactId>vehicle-export-backend</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>hu.ulyssys.java.course</groupId>
             <artifactId>vehicle-frontend</artifactId>
             <version>1.0.0-SNAPSHOT</version>
             <type>war</type>
@@ -41,6 +47,11 @@
                             <groupId>hu.ulyssys.java.course</groupId>
                             <artifactId>vehicle-backend</artifactId>
                         </ejbModule>
+                        <ejbModule>
+                            <groupId>hu.ulyssys.java.course</groupId>
+                            <artifactId>vehicle-export-backend</artifactId>
+                        </ejbModule>
+
                         <webModule>
                             <groupId>hu.ulyssys.java.course</groupId>
                             <artifactId>vehicle-frontend</artifactId>

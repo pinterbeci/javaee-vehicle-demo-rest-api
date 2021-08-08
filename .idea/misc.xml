@@ -12,6 +12,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/vehicle-export-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/vehicle-ear/pom.xml" />
+        <option value="$PROJECT_DIR$/vehicle-api/pom.xml" />
+        <option value="$PROJECT_DIR$/vehicle-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/vehicle-frontend/pom.xml" />
+        <option value="$PROJECT_DIR$/vehicle-parent/pom.xml" />
       </list>
     </option>
   </component>

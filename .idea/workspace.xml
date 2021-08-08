@@ -9,7 +9,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="521619f9-9674-495b-80f4-3e9d15d3dbc1" name="Default Changelist" comment="" />
+    <list default="true" id="521619f9-9674-495b-80f4-3e9d15d3dbc1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/servlet/CarPDFServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/servlet/CarTableServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-api/target/vehicle-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/vehicle-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-api/vehicle-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-backend/vehicle-backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-ear/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-ear/target/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT.ear" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT.ear" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/META-INF/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/META-INF/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/lib/vehicle-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/lib/vehicle-api.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-backend.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-backend.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-frontend.war" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-frontend.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-ear/vehicle-ear.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-export-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/classes/hu/ulyssys/java/course/maven/service/impl/XLSExportServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-export-backend/target/classes/hu/ulyssys/java/course/maven/service/impl/XLSExportServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-export-backend/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/rest/CoreRestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/rest/CoreRestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/rest/CoreRestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/rest/CoreRestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/vehicle-frontend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-parent/vehicle-parent.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +59,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -33,6 +71,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1wGXUlmuMPVt6LrVQ1EY7HGynG4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,20 +79,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vehicle-parent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/servlet" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Portfolio\Ulyssys Java EE Course\JavaEEDemoVehicle\vehicle-frontend\src\main\java\hu\ulyssys\java\course\maven\servlet" />
       <recent name="E:\Portfolio\Ulyssys Java EE Course\JavaEEDemoVehicle\vehicle-export-backend\src\main\resources\META-INF" />
       <recent name="E:\Portfolio\Ulyssys Java EE Course\JavaEEDemoVehicle\vehicle-export-backend\src\main\java\hu\ulyssy\java\course\maven\service\impl" />
-      <recent name="E:\Portfolio\Ulyssys Java EE Course\JavaEEDemoVehicle\vehicle-frontend\src\main\java\hu\ulyssys\java\course\maven\servlet" />
       <recent name="E:\Portfolio\Ulyssys Java EE Course\JavaEEDemoVehicle\vehicle-export-backend\src\main\java" />
       <recent name="E:\Portfolio\Ulyssys Java EE Course\JavaEEDemoVehicle\vehicle-api\src\main\java\hu\ulyssys\java\course\maven\entity" />
     </key>
@@ -233,30 +273,22 @@
       <workItem from="1628355628813" duration="1393000" />
       <workItem from="1628357857497" duration="1609000" />
       <workItem from="1628405981415" duration="2480000" />
-      <workItem from="1628408488232" duration="11327000" />
+      <workItem from="1628408488232" duration="14173000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/rest/CoreRestService.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/rest/CoreRestService.java</url>
-          <line>49</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

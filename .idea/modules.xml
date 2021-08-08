@@ -3,11 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaEEDemoVehicle.iml" filepath="$PROJECT_DIR$/.idea/JavaEEDemoVehicle.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vehicle-api/vehicle-api.iml" filepath="$PROJECT_DIR$/vehicle-api/vehicle-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vehicle-backend/vehicle-backend.iml" filepath="$PROJECT_DIR$/vehicle-backend/vehicle-backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vehicle-ear/vehicle-ear.iml" filepath="$PROJECT_DIR$/vehicle-ear/vehicle-ear.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vehicle-frontend/vehicle-frontend.iml" filepath="$PROJECT_DIR$/vehicle-frontend/vehicle-frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vehicle-parent/vehicle-parent.iml" filepath="$PROJECT_DIR$/vehicle-parent/vehicle-parent.iml" />
     </modules>
   </component>
 </project>

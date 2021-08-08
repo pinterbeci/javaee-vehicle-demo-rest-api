@@ -15,11 +15,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JavaEEDemoVehicle" target="8" />
-      <module name="vehicle-api" target="1.8" />
-      <module name="vehicle-backend" target="1.8" />
-      <module name="vehicle-ear" target="1.8" />
-      <module name="vehicle-frontend" target="1.8" />
-      <module name="vehicle-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
