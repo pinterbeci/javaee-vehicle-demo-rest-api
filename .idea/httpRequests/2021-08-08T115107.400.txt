@@ -1,1 +1,0 @@
-[PARAMETER][update.arg0.name][nem lehet üres][]

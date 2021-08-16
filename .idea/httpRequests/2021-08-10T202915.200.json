@@ -1,0 +1,30 @@
+[
+  {
+    "id": 7,
+    "licencePlateNumber": "plk-666",
+    "name": "name-02",
+    "onwerID": 3,
+    "doorNumbers": 0
+  },
+  {
+    "id": 9,
+    "licencePlateNumber": "rtt-666",
+    "name": "car-name 022",
+    "onwerID": 9,
+    "doorNumbers": 0
+  },
+  {
+    "id": 10,
+    "licencePlateNumber": "uzu-661",
+    "name": "car-name033",
+    "onwerID": 1,
+    "doorNumbers": 0
+  },
+  {
+    "id": 11,
+    "licencePlateNumber": "ter-700",
+    "name": "car-name 22",
+    "onwerID": 2,
+    "doorNumbers": 0
+  }
+]

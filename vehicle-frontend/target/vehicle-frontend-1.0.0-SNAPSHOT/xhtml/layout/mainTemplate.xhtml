@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:test="http://java.sun.com/jsf/composite/test"
+      xml:lang="en" lang="en">
+<h:head>
+    <title>
+        <ui:insert name="title"/>
+    </title>
+</h:head>
+<h:body>
+    <!--
+        Egy sablont fogunk készíteni, mely alapján egy általánosítunk.
+        Tehát, dinamikusan hozunk rá különböző tartalmakat.
+        Az 'insert name = "[current_name]" '-el adunk meg különböző komponenseket.
+        -->
+
+
+    <ui:insert name="nemuBar">
+
+        <!-- <test:testComponent usernameValue="Érték" usernameLabel="Lééébölll">
+         </test:testComponent>
+        -->
+        <h:form>
+            <!--
+            form-ba kell tenni az olyan komponenseket, amelyeket szerver oldalra összekötjük-->
+            <p:menubar model="#{menuProviderMBean.getMenuModel()}">
+                <!--
+                    model attribútum nélküli menü
+                 <p:menuitem outcome="/xhtml/car.xhtml" value="Car"/>
+                    <p:menuitem outcome="/xhtml/plane.xhtml" value="Plane"/>
+                    <p:menuitem outcome="/xhtml/ship.xhtml" value="Ship"/>
+                    <p:menuitem outcome="/xhtml/owner.xhtml" value="Owner"/>-->
+            </p:menubar>
+        </h:form>
+    </ui:insert>
+
+    <ui:insert name="content"/>
+
+    <ui:insert name="footer">
+        Járműves applikáció ©
+    </ui:insert>
+
+
+</h:body>
+</html>

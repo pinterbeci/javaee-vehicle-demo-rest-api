@@ -21,7 +21,7 @@ public abstract class CoreRestService<T extends AbstractVehicle, M extends CoreR
     private OwnerService ownerService;
 
     @Inject
-    private CoreService<T> service;
+    protected CoreService<T> service;
 
 
     @GET
@@ -32,7 +32,23 @@ public abstract class CoreRestService<T extends AbstractVehicle, M extends CoreR
     }
 
     @GET
+    @Produces(MediaType.APPLICATION_JSON)
     @Path("/{id}")
+    public Response findVehicleById(@PathParam("id") Long id) {
+
+        T entity = service.findById(id);
+
+        if(entity == null){
+            return Response.status(Response.Status.NOT_FOUND).build();
+
+        }
+        return Response.ok(service.getAll().stream().
+                filter(e -> e.getId().equals(entity.getId())).
+                collect(Collectors.toList())).build();
+    }
+
+    @GET
+    @Path("/find-vehicle-owner/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response findAll(@PathParam("id") Long id) {
         Owner owner = ownerService.findById(id);

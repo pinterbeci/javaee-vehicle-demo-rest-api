@@ -1,0 +1,15 @@
+[
+  {
+    "id": 11,
+    "licencePlateNumber": "ter-700",
+    "manufacturer": "car-manufacturer-09",
+    "name": "car-name 22",
+    "owner": {
+      "id": 2,
+      "fullName": "Kalim Pál Ó",
+      "registrationDate": "2021-04-04T22:00:00Z[UTC]"
+    },
+    "doorNumbers": 4,
+    "vehicleType": "Car"
+  }
+]

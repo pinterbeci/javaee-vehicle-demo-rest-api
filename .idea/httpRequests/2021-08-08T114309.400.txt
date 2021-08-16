@@ -1,1 +1,0 @@
-[PARAMETER][save.arg0.doorNumbers][kisebb vagy egyenlő kell legyen mint 10][17]

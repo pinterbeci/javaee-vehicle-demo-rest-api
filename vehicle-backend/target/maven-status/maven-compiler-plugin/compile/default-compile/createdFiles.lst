@@ -1,10 +1,16 @@
 hu\ulyssys\java\course\maven\dao\CarDAO.class
+hu\ulyssys\java\course\maven\dao\impl\AppUserDAOImpl.class
 hu\ulyssys\java\course\maven\dao\ShipDAO.class
+hu\ulyssys\java\course\maven\service\MenuItemServiceImpl.class
 hu\ulyssys\java\course\maven\service\AbstractServiceImpl.class
 hu\ulyssys\java\course\maven\dao\impl\CoreDAOImpl.class
 hu\ulyssys\java\course\maven\service\PlaneServiceImpl.class
+hu\ulyssys\java\course\maven\dao\AppUserDAO.class
+hu\ulyssys\java\course\maven\service\AppUserServiceImpl.class
+hu\ulyssys\java\course\maven\dao\MenuItemDAO.class
 hu\ulyssys\java\course\maven\dao\impl\ShipDAOImpl.class
 hu\ulyssys\java\course\maven\service\OwnerServiceImpl.class
+hu\ulyssys\java\course\maven\dao\impl\MenuItemDAOImpl.class
 hu\ulyssys\java\course\maven\dao\impl\PlaneDAOImpl.class
 hu\ulyssys\java\course\maven\dao\CoreDAO.class
 hu\ulyssys\java\course\maven\service\ShipServiceImpl.class

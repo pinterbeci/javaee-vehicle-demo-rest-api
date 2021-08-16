@@ -4,131 +4,145 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui"
+      xmlns:crud="http://java.sun.com/jsf/composite/crud"
       xml:lang="en" lang="en">
-<h:head>
-    <title>SHIP demo</title>
-</h:head>
 <body>
-<h:form id="form" style="margin: 20px auto;">
 
-    <ui:include src="upMenu.xhtml"/>
-    <br/>
-    <p:growl id="growl" showDetail="false"/>
-    <p:toolbar>
-        <p:toolbarGroup>
-            <p:commandButton id="add" icon="pi pi-plus" process="@this" value="Új hozzáadása"
-                             actionListener="#{shipCRUDMBean.initSave}" update="@([id$=shipForm])"
-                             oncomplete="PF('shipDialog').show()"/>
-            <p:commandButton disabled="#{shipCRUDMBean.selectedEntity.id==null}" id="delete" icon="pi pi-times"
-                             process="@this" value="Törlés" actionListener="#{shipCRUDMBean.remove}" update="@form">
-                <p:confirm header="Törlés" message="Biztos vagy benne?" icon="pi pi-times"/>
-            </p:commandButton>
-            <p:commandButton disabled="#{shipCRUDMBean.selectedEntity.id==null}" id="update" process="@this"
-                             value="Módosítás" icon="pi pi-pencil" update="@([id$=shipForm])"
-                             oncomplete="PF('shipDialog').show()"/>
-        </p:toolbarGroup>
-        <p:toolbarGroup align="right">
-            <p:commandButton id="columntTogglerBtn" icon="pi pi-table"/>
+<ui:composition template="layout/mainTemplate.xhtml">
 
-            <p:columnToggler id="columntToggler" trigger="columntTogglerBtn" datasource="table"/>
+    <ui:define name="title">SHIP Demo</ui:define>
 
-            <p:commandButton value="XLS" styleClass="p-mr-2 p-mb-2">
-                <p:dataExporter type="xls" target="table" fileName="export"/>
-            </p:commandButton>
-
-            <p:commandButton value="XLXS" styleClass="p-mr-2 p-mb-2">
-                <p:dataExporter type="xlsxstream" target="table" fileName="export"/>
-            </p:commandButton>
-
-            <!-- TODO Utf-8 karakter -->
-            <p:commandButton value="PDF" styleClass="p-mr-2 p-mb-2">
-                <p:dataExporter type="pdf" target="table" fileName="export"/>
-            </p:commandButton>
-        </p:toolbarGroup>
-    </p:toolbar>
-
-    <p:dataTable id="table" value="#{shipCRUDMBean.list}" var="ship" rows="10"
-                 paginator="true" selectionMode="single" selection="#{shipCRUDMBean.selectedEntity}" rowKey="#{ship.id}"
-                 paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
-                 currentPageReportTemplate="{startRecord}-{endRecord} of {totalRecords} records"
-                 rowsPerPageTemplate="5,10,{ShowAll|'All'}">
-        <p:ajax event="rowSelect" update="@form"/>
-        <p:column style="width:2rem" exportable="false">
-            <p:rowToggler/>
-        </p:column>
-        <p:column toggleable="false" sortBy="#{ship.id}" filterBy="#{ship.id}" filterMatchMode="contains" headerText="ID">
-            <h:outputText value="#{ship.id}"/>
-        </p:column>
-
-        <p:column sortBy="#{ship.name}" filterBy="#{ship.name}" filterMatchMode="contains"
-                  headerText="Név">
-            <h:outputText value="#{ship.name}"/>
-        </p:column>
-
-        <p:column sortBy="#{ship.vehicleType}" filterBy="#{ship.vehicleType}" filterMatchMode="contains"
-                  headerText="Típus">
-            <h:outputText value="#{ship.vehicleType}"/>
-        </p:column>
-        <p:column sortBy="#{ship.manufacturer}" filterBy="#{ship.manufacturer}" filterMatchMode="contains"
-                  headerText="Gyártó">
-            <h:outputText value="#{ship.manufacturer}"/>
-        </p:column>
-        <p:column sortBy="#{ship.weight}" filterBy="#{ship.weight}" filterMatchMode="contains"
-                  headerText="Teher kapacitás(t)">
-            <h:outputText value="#{plane.weight}"/>
-        </p:column>
-        <p:column sortBy="#{ship.licencePlateNumber}" filterBy="#{ship.licencePlateNumber}" filterMatchMode="contains"
-                  headerText="Rendszám">
-            <h:outputText value="#{ship.licencePlateNumber}"/>
-        </p:column>
-
-        <p:column sortBy="#{ship.owner.fullName}" filterBy="#{ship.owner.fullName}" filterMatchMode="contains"
-                  headerText="Tulajdonos">
-            <h:outputText value="#{ship.owner.fullName}"/>
-        </p:column>
+    <ui:define name="content">
+        <h:form id="form" style="margin: 20px auto;">
 
 
-    </p:dataTable>
+            <!--
+                    composite komponens nélküli menü lista
+            <ui:include src="upMenu.xhtml"/>
+            <br/>
+            -->
+            <!--      <p:growl id="growl" showDetail="false"/>
+                  <p:toolbar>
+                      <p:toolbarGroup>
+                          <p:commandButton id="add" icon="pi pi-plus" process="@this" value="Új hozzáadása"
+                                           actionListener="#{shipCRUDMBean.initSave}" update="@([id$=shipForm])"
+                                           oncomplete="PF('shipDialog').show()"/>
+                          <p:commandButton disabled="#{shipCRUDMBean.selectedEntity.id==null}" id="delete" icon="pi pi-times"
+                                           process="@this" value="Törlés" actionListener="#{shipCRUDMBean.remove}"
+                                           update="@form">
+                              <p:confirm header="Törlés" message="Biztos vagy benne?" icon="pi pi-times"/>
+                          </p:commandButton>
+                          <p:commandButton disabled="#{shipCRUDMBean.selectedEntity.id==null}" id="update" process="@this"
+                                           value="Módosítás" icon="pi pi-pencil" update="@([id$=shipForm])"
+                                           oncomplete="PF('shipDialog').show()"/>
+                      </p:toolbarGroup>
+                      <p:toolbarGroup align="right">
+                          <p:commandButton id="columntTogglerBtn" icon="pi pi-table"/>
 
-    <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" responsive="true" width="350">
-        <p:commandButton value="Nem" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
-        <p:commandButton value="Igen" type="button" styleClass="ui-confirmdialog-yes"/>
-    </p:confirmDialog>
-</h:form>
+                          <p:columnToggler id="columntToggler" trigger="columntTogglerBtn" datasource="table"/>
 
-<p:dialog id="shipDialog" widgetVar="shipDialog" header="Form" modal="true" closable="true">
-    <h:form id="shipForm">
-        <p:panelGrid layout="grid" columns="2" id="formPanel" style="width: 600px">
-            <p:outputLabel value="Név"/>
-            <p:inputText value="#{shipCRUDMBean.selectedEntity.name}" required="true" requiredMessage="Név kötelező"/>
+                          <p:commandButton value="XLS" styleClass="p-mr-2 p-mb-2">
+                              <p:dataExporter type="xls" target="table" fileName="export"/>
+                          </p:commandButton>
 
-            <p:outputLabel value="Teher kapacitás(t)"/>
-            <p:inputNumber thousandSeparator="" decimalPlaces="0"
-                           value="#{shipCRUDMBean.selectedEntity.weight}" required="true"
-                           requiredMessage="A Teher kapacitás kötelező"/>
+                          <p:commandButton value="XLXS" styleClass="p-mr-2 p-mb-2">
+                              <p:dataExporter type="xlsxstream" target="table" fileName="export"/>
+                          </p:commandButton>
 
-            <p:outputLabel value="Gyártó"/>
-            <p:inputText maxValue="100" thousandSeparator="" decimalPlaces="0"
-                         value="#{shipCRUDMBean.selectedEntity.manufacturer}" required="true"
-                         requiredMessage="A Gyártó kötelező"/>
+                          &lt;!&ndash; TODO Utf-8 karakter &ndash;&gt;
+                          <p:commandButton value="PDF" styleClass="p-mr-2 p-mb-2">
+                              <p:dataExporter type="pdf" target="table" fileName="export"/>
+                          </p:commandButton>
+                      </p:toolbarGroup>
+                  </p:toolbar>
+      -->
 
-            <p:outputLabel value="Rendszám"/>
-            <p:inputText maxValue="100" thousandSeparator="" decimalPlaces="0"
-                         value="#{shipCRUDMBean.selectedEntity.licencePlateNumber}" required="true"
-                         requiredMessage="A Rendszám kötelező"/>
+            <crud:crudFunction bean="#{shipCRUDMBean}" onCompleteShowDialog="PF('shipDialog').show()"
+                               onCompleteUpdate="@([id$=shipForm])"/>
+            <p:dataTable id="table" value="#{shipCRUDMBean.list}" var="ship" rows="10"
+                         paginator="true" selectionMode="single" selection="#{shipCRUDMBean.selectedEntity}"
+                         rowKey="#{ship.id}"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                         currentPageReportTemplate="{startRecord}-{endRecord} of {totalRecords} records"
+                         rowsPerPageTemplate="5,10,{ShowAll|'All'}">
+                <p:ajax event="rowSelect" update="@form"/>
 
-            <p:outputLabel value="Tulajdonos"/>
-            <p:selectOneMenu value="#{shipCRUDMBean.selectedEntity.owner}" converter="#{appOwnerConverter}">
-                <f:selectItem itemValue="#{null}" itemLabel="Kérem válasszon"/>
-                <f:selectItems value="#{shipCRUDMBean.ownerList}" var="owner" itemLabel="#{owner.fullName}"
-                               itemValue="#{owner}"/>
-            </p:selectOneMenu>
-            <p:commandButton value="Mentés" icon="pi pi-save" actionListener="#{shipCRUDMBean.save()}"
-                             process="formPanel" update=":form"/>
-        </p:panelGrid>
-    </h:form>
-</p:dialog>
+                <p:column sortBy="#{ship.id}" filterBy="#{ship.id}" filterMatchMode="contains"
+                          headerText="ID">
+                    <h:outputText value="#{ship.id}"/>
+                </p:column>
+
+                <p:column sortBy="#{ship.name}" filterBy="#{ship.name}" filterMatchMode="contains"
+                          headerText="Név">
+                    <h:outputText value="#{ship.name}"/>
+                </p:column>
+
+                <p:column sortBy="#{ship.vehicleType}" filterBy="#{ship.vehicleType}" filterMatchMode="contains"
+                          headerText="Típus">
+                    <h:outputText value="#{ship.vehicleType}"/>
+                </p:column>
+                <p:column sortBy="#{ship.manufacturer}" filterBy="#{ship.manufacturer}" filterMatchMode="contains"
+                          headerText="Gyártó">
+                    <h:outputText value="#{ship.manufacturer}"/>
+                </p:column>
+                <p:column sortBy="#{ship.weight}" filterBy="#{ship.weight}" filterMatchMode="contains"
+                          headerText="Teher kapacitás(t)">
+                    <h:outputText value="#{plane.weight}"/>
+                </p:column>
+                <p:column sortBy="#{ship.licencePlateNumber}" filterBy="#{ship.licencePlateNumber}"
+                          filterMatchMode="contains"
+                          headerText="Rendszám">
+                    <h:outputText value="#{ship.licencePlateNumber}"/>
+                </p:column>
+
+                <p:column sortBy="#{ship.owner.fullName}" filterBy="#{ship.owner.fullName}" filterMatchMode="contains"
+                          headerText="Tulajdonos">
+                    <h:outputText value="#{ship.owner.fullName}"/>
+                </p:column>
 
 
+            </p:dataTable>
+
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" responsive="true" width="350">
+                <p:commandButton value="Nem" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
+                <p:commandButton value="Igen" type="button" styleClass="ui-confirmdialog-yes"/>
+            </p:confirmDialog>
+        </h:form>
+
+        <p:dialog id="shipDialog" widgetVar="shipDialog" header="Form" modal="true" closable="true">
+            <h:form id="shipForm">
+                <p:panelGrid layout="grid" columns="2" id="formPanel" style="width: 600px">
+                    <p:outputLabel value="Név"/>
+                    <p:inputText value="#{shipCRUDMBean.selectedEntity.name}" required="true"
+                                 requiredMessage="Név kötelező"/>
+
+                    <p:outputLabel value="Teher kapacitás(t)"/>
+                    <p:inputNumber thousandSeparator="" decimalPlaces="0"
+                                   value="#{shipCRUDMBean.selectedEntity.weight}" required="true"
+                                   requiredMessage="A Teher kapacitás kötelező"/>
+
+                    <p:outputLabel value="Gyártó"/>
+                    <p:inputText maxValue="100" thousandSeparator="" decimalPlaces="0"
+                                 value="#{shipCRUDMBean.selectedEntity.manufacturer}" required="true"
+                                 requiredMessage="A Gyártó kötelező"/>
+
+                    <p:outputLabel value="Rendszám"/>
+                    <p:inputText maxValue="100" thousandSeparator="" decimalPlaces="0"
+                                 value="#{shipCRUDMBean.selectedEntity.licencePlateNumber}" required="true"
+                                 requiredMessage="A Rendszám kötelező"/>
+
+                    <p:outputLabel value="Tulajdonos"/>
+                    <p:selectOneMenu value="#{shipCRUDMBean.selectedEntity.owner}" converter="#{appOwnerConverter}">
+                        <f:selectItem itemValue="#{null}" itemLabel="Kérem válasszon"/>
+                        <f:selectItems value="#{shipCRUDMBean.ownerList}" var="owner" itemLabel="#{owner.fullName}"
+                                       itemValue="#{owner}"/>
+                    </p:selectOneMenu>
+                    <p:commandButton value="Mentés" icon="pi pi-save" actionListener="#{shipCRUDMBean.save()}"
+                                     process="formPanel" update=":form"/>
+                </p:panelGrid>
+            </h:form>
+        </p:dialog>
+    </ui:define>
+</ui:composition>
 </body>
 </html>

@@ -1,0 +1,15 @@
+[
+  {
+    "id": 6,
+    "licencePlateNumber": "uzt-31110",
+    "manufacturer": "ship manufacturer-045",
+    "name": "ship-025",
+    "owner": {
+      "id": 3,
+      "fullName": "Kálmán a legkiválóbb Nepper",
+      "registrationDate": "2021-01-03T23:00:00Z[UTC]"
+    },
+    "vehicleType": "Ship",
+    "weight": 99
+  }
+]

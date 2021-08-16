@@ -1,0 +1,15 @@
+[
+  {
+    "id": 7,
+    "licencePlateNumber": "plk-666",
+    "manufacturer": "manufacturer-99",
+    "name": "name-02",
+    "owner": {
+      "id": 3,
+      "fullName": "Kálmán a legkiválóbb Nepper",
+      "registrationDate": "2021-01-03T23:00:00Z[UTC]"
+    },
+    "doorNumbers": 6,
+    "vehicleType": "Car"
+  }
+]

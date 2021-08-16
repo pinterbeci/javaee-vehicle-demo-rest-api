@@ -2,6 +2,16 @@ GET http://localhost:8080/api/ship
 Accept: application/json
 
 ###
+GET http://localhost:8080/api/ship/6
+Accept: application/json
+
+###
+
+
+GET http://localhost:8080/api/ship/find-vehicle-owner/2
+Accept: application/json
+
+###
 
 
 

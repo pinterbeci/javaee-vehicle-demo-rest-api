@@ -1,0 +1,28 @@
+[
+  {
+    "id": 3,
+    "licencePlateNumber": "ter-666",
+    "manufacturer": "manufacturer-03",
+    "name": "name-2",
+    "owner": {
+      "id": 3,
+      "fullName": "Kálmán a legkiválóbb Nepper",
+      "registrationDate": "2021-01-03T23:00:00Z[UTC]"
+    },
+    "doorNumbers": 4,
+    "vehicleType": "Car"
+  },
+  {
+    "id": 7,
+    "licencePlateNumber": "plk-666",
+    "manufacturer": "manufacturer-99",
+    "name": "name-02",
+    "owner": {
+      "id": 3,
+      "fullName": "Kálmán a legkiválóbb Nepper",
+      "registrationDate": "2021-01-03T23:00:00Z[UTC]"
+    },
+    "doorNumbers": 6,
+    "vehicleType": "Car"
+  }
+]

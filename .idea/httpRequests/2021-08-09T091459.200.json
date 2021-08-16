@@ -1,0 +1,15 @@
+[
+  {
+    "id": 10,
+    "licencePlateNumber": "uzu-661",
+    "manufacturer": "car manufacturer-66",
+    "name": "car-name033",
+    "owner": {
+      "id": 1,
+      "fullName": "Pintér Béla",
+      "registrationDate": "2020-02-01T23:00:00Z[UTC]"
+    },
+    "doorNumbers": 99,
+    "vehicleType": "Car"
+  }
+]

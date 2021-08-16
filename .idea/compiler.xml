@@ -13,8 +13,5 @@
         <module name="vehicle-api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JavaEEDemoVehicle" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

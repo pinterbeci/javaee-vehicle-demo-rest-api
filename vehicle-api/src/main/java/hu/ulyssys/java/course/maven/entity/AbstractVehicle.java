@@ -21,6 +21,9 @@ public abstract class AbstractVehicle extends AbstractEntity implements VehicleT
     @Column(name = "licence_plate_number")
     private String licencePlateNumber;
 
+  /*  @Column(name = "owner_id")
+    private Long ownerID;*/
+
     @JoinColumn(name = "owner_id")
     @ManyToOne
     private Owner owner;

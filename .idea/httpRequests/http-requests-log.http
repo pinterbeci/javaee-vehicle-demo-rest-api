@@ -1,3 +1,148 @@
+GET http://localhost:8080/api/car/find-vehicle-owner/1
+Accept: application/json
+
+<> 2021-08-10T215121.200.json
+
+###
+
+GET http://localhost:8080/api/car/find-vehicle-owner/1
+Accept: application/json
+
+<> 2021-08-10T214027.200.json
+
+###
+
+GET http://localhost:8080/api/car/find-vehicle-owner/2
+Accept: application/json
+
+<> 2021-08-10T213906.200.json
+
+###
+
+GET http://localhost:8080/api/car/onwer/2
+Accept: application/json
+
+<> 2021-08-10T213821.404.html
+
+###
+
+GET http://localhost:8080/api/car/onwer/2
+Accept: application/json
+
+<> 2021-08-10T213811.404.html
+
+###
+
+DELETE http://localhost:8080/api/owner/10
+Accept: application/json
+
+<> 2021-08-10T205735.500.html
+
+###
+
+GET http://localhost:8080/api/ship/find-vehicle-owner/2
+Accept: application/json
+
+<> 2021-08-10T203605.200.json
+
+###
+
+GET http://localhost:8080/api/ship/6
+Accept: application/json
+
+<> 2021-08-10T203558.200.json
+
+###
+
+GET http://localhost:8080/api/plane/7
+Accept: application/json
+
+<> 2021-08-10T203411.200.json
+
+###
+
+GET http://localhost:8080/api/plane/find-vehicle-owner/2
+Accept: application/json
+
+<> 2021-08-10T203359.200.json
+
+###
+
+GET http://localhost:8080/api/car/find-vehicle-owner/2
+Accept: application/json
+
+<> 2021-08-10T203317.200.json
+
+###
+
+GET http://localhost:8080/api/car/7
+Accept: application/json
+
+<> 2021-08-10T203011.200.json
+
+###
+
+GET http://localhost:8080/api/car
+Accept: application/json
+
+<> 2021-08-10T202915.200.json
+
+###
+
+GET http://localhost:8080/api/car/3
+Accept: application/json
+
+<> 2021-08-10T202858.404.html
+
+###
+
+GET http://localhost:8080/api/car/3
+Accept: application/json
+
+<> 2021-08-10T202753.404.html
+
+###
+
+GET http://localhost:8080/api/car/3
+Accept: application/json
+
+<> 2021-08-10T202625.200.json
+
+###
+
+DELETE http://localhost:8080/api/car/3
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/api/3
+Accept: application/json
+
+<> 2021-08-10T202536.404.html
+
+###
+
+GET http://localhost:8080/api/car/3
+Accept: application/json
+
+<> 2021-08-09T091607.200.json
+
+###
+
+GET http://localhost:8080/api/car/3
+Accept: application/json
+
+<> 2021-08-09T091540.200.json
+
+###
+
+GET http://localhost:8080/api/car/1
+Accept: application/json
+
+<> 2021-08-09T091459.200.json
+
+###
+
 GET http://localhost:8080/api/ship/2
 Accept: application/json
 
@@ -255,211 +400,6 @@ Content-Type: application/json
 }
 
 <> 2021-08-08T115708.200.json
-
-###
-
-POST http://localhost:8080/api/owner
-Content-Type: application/json
-
-{
- "fullName" : "Sanya a mágikus"
-}
-
-<> 2021-08-08T115320.200.json
-
-###
-
-PUT http://localhost:8080/api/owner
-Content-Type: application/json
-
-{
-  "id": 3,
-  "fullName": "Kálmán a kiváló Nepper"
-}
-
-<> 2021-08-08T115116.200.json
-
-###
-
-PUT http://localhost:8080/api/car
-Content-Type: application/json
-
-{
-  "id": 3,
-  "fullName": "Kálmán a kiváló Nepper"
-}
-
-<> 2021-08-08T115107.400.txt
-
-###
-
-GET http://localhost:8080/api/owner
-Accept: application/json
-
-<> 2021-08-08T115016.200.json
-
-###
-
-POST http://localhost:8080/api/car
-Content-Type: application/json
-
-{
-  "licencePlateNumber": "ter-666",
-  "name": "name-11",
-  "onwerID": 1,
-  "doorNumbers": 0
-}
-
-<> 2021-08-08T114915.200.json
-
-###
-
-GET http://localhost:8080/api/car
-Accept: application/json
-
-<> 2021-08-08T114906.200.json
-
-###
-
-DELETE http://localhost:8080/api/car/5
-Accept: application/json
-
-###
-
-PUT http://localhost:8080/api/car
-Content-Type: application/json
-
-{ "id": 1,
-  "licencePlateNumber": "ter-666",
-  "name": "name-11",
-  "onwerID": 1,
-  "doorNumbers": 0
-}
-
-<> 2021-08-08T114633.200.json
-
-###
-
-GET http://localhost:8080/api/car
-Accept: application/json
-
-<> 2021-08-08T114603.200.json
-
-###
-
-GET http://localhost:8080/api/owner
-Accept: application/json
-
-<> 2021-08-08T114444.200.json
-
-###
-
-GET http://localhost:8080/api/plane
-Accept: application/json
-
-<> 2021-08-08T114435.200.json
-
-###
-
-GET http://localhost:8080/api/car
-Accept: application/json
-
-<> 2021-08-08T114426.200.json
-
-###
-
-POST http://localhost:8080/api/cat
-Content-Type: application/json
-
-{
-  "name": "rénszarvi",
-  "ownerID": 1
-}
-
-<> 2021-08-08T114340.404.html
-
-###
-
-POST http://localhost:8080/api/car
-Content-Type: application/json
-
-{
-  "id": 14,
-  "name": "Fecske",
-  "doorNumbers": 17,
-  "ownerID": 1
-}
-
-<> 2021-08-08T114309.400.txt
-
-###
-
-PUT http://localhost:8080/api/car
-Content-Type: application/json
-
-{
-  "id": 4,
-  "licencePlateNumber": "ztr-666",
-  "name": "name-3",
-  "onwerID": 2,
-  "doorNumbers": 6
-}
-
-###
-
-GET http://localhost:8080/api/car
-Accept: application/json
-
-<> 2021-08-08T114047.200.json
-
-###
-
-GET http://localhost:8080/api/ship
-Accept: application/json
-
-<> 2021-08-08T113931.200.json
-
-###
-
-GET http://localhost:8080/api/car
-Accept: application/json
-
-<> 2021-08-08T113920.200.json
-
-###
-
-PUT http://localhost:8080/api/car
-Content-Type: application/json
-
-{
-  "id": 15,
-  "name": "name-03",
-  "manufacturer": "manufacturer-06",
-  "doorNumbers": 9,
-  "licencePlateNumber": "plk-663",
-  "onwerID": 1
-}
-
-###
-
-PUT http://localhost:8080/api/car
-Content-Type: application/json
-
-{
-  "id": 15,
-  "name": "name-03",
-  "manufacturer": "manufacturer-06",
-  "doorNumbers": 9,
-  "licencePlateNumber": "plk-663",
-  "ownerID": 1
-}
-
-###
-
-GET http://localhost:8080/api/car
-Accept: application/json
-
-<> 2021-08-08T113604.200.json
 
 ###
 

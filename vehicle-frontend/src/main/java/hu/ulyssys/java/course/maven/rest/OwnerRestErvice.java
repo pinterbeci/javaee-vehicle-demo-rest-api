@@ -1,7 +1,9 @@
 package hu.ulyssys.java.course.maven.rest;
 
+import hu.ulyssys.java.course.maven.entity.AbstractVehicle;
 import hu.ulyssys.java.course.maven.entity.Owner;
 import hu.ulyssys.java.course.maven.rest.model.OwnerModel;
+import hu.ulyssys.java.course.maven.service.CoreService;
 import hu.ulyssys.java.course.maven.service.OwnerService;
 
 import javax.inject.Inject;
@@ -25,6 +27,7 @@ public class OwnerRestErvice {
                 collect(Collectors.toList())).build();
     }
 
+
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
@@ -36,6 +39,7 @@ public class OwnerRestErvice {
         ownerService.add(owner);
         return Response.ok(createModelFromEntity(owner)).build();
     }
+
 
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
