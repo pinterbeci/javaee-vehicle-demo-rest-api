@@ -10,109 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="521619f9-9674-495b-80f4-3e9d15d3dbc1" name="Default Changelist" comment="Java EE Vehicle app REST-tel, EAR-rel és az export-backend modullal.">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T113604.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T113920.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T113931.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114047.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114309.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114340.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114426.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114435.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114444.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114603.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114633.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114906.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T114915.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T115016.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T115107.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T115116.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-08-08T115320.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/entity/AbstractVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/entity/AbstractVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/service/CoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/service/CoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-api/target/classes/hu/ulyssys/java/course/maven/entity/AbstractVehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/classes/hu/ulyssys/java/course/maven/entity/AbstractVehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-api/target/classes/hu/ulyssys/java/course/maven/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/classes/hu/ulyssys/java/course/maven/service/CarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/entity/AppUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/entity/AppUserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/entity/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/hu/ulyssys/java/course/maven/entity/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-api/target/classes/hu/ulyssys/java/course/maven/entity/AppUserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/classes/hu/ulyssys/java/course/maven/entity/AppUserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-api/target/classes/hu/ulyssys/java/course/maven/entity/MenuItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/classes/hu/ulyssys/java/course/maven/entity/MenuItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-api/target/vehicle-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/target/vehicle-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/src/main/java/hu/ulyssys/java/course/maven/dao/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/src/main/java/hu/ulyssys/java/course/maven/dao/CarDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/src/main/java/hu/ulyssys/java/course/maven/dao/impl/CarDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/src/main/java/hu/ulyssys/java/course/maven/dao/impl/CarDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/src/main/java/hu/ulyssys/java/course/maven/service/AbstractServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/src/main/java/hu/ulyssys/java/course/maven/service/AbstractServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/src/main/java/hu/ulyssys/java/course/maven/service/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/src/main/java/hu/ulyssys/java/course/maven/service/CarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/classes/hu/ulyssys/java/course/maven/dao/CarDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/classes/hu/ulyssys/java/course/maven/dao/CarDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/classes/hu/ulyssys/java/course/maven/dao/impl/CarDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/classes/hu/ulyssys/java/course/maven/dao/impl/CarDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/classes/hu/ulyssys/java/course/maven/service/AbstractServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/classes/hu/ulyssys/java/course/maven/service/AbstractServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/classes/hu/ulyssys/java/course/maven/service/CarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/classes/hu/ulyssys/java/course/maven/service/CarServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-backend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/META-INF/ejb-jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/CarDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/CoreDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/OwnerDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/PlaneDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/ShipDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/impl/CarDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/impl/CoreDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/impl/OwnerDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/impl/PlaneDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/dao/impl/ShipDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/service/AbstractServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/service/CarServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/service/OwnerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/service/PlaneServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-backend/target/vehicle-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/service/ShipServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-ear/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT.ear" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT.ear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/lib/vehicle-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/lib/vehicle-api.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-backend.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-backend.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-export-backend.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-export-backend.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-frontend.war" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-ear/target/vehicle-ear-1.0.0-SNAPSHOT/vehicle-frontend.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-export-backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-export-backend/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT/META-INF/ejb-jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/service/impl/PDFExportServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-export-backend/target/vehicle-export-backend-1.0.0-SNAPSHOT/hu/ulyssys/java/course/maven/service/impl/XLSExportServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/car-rest.http" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/car-rest.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/owner-rest.http" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/owner-rest.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/plane-rest.http" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/plane-rest.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/ship-rest.http" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/ship-rest.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/mbean/OwnerCRUDMbean.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/mbean/OwnerCRUDMbean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/rest/CarRestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/rest/CarRestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/rest/CoreRestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/rest/CoreRestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/rest/OwnerRestErvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/rest/OwnerRestErvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/car.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/car.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/owner.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/owner.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/plane.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/plane.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/ship.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/ship.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/rest/CoreRestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/rest/CoreRestService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/rest/OwnerRestErvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/rest/OwnerRestErvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/mbean/AppUserCRUDMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/mbean/AppUserCRUDMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/mbean/MenuItemCRUDMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/mbean/MenuItemCRUDMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/mbean/MenuProviderMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/java/hu/ulyssys/java/course/maven/mbean/MenuProviderMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/resources/META-INF/resources/crud/crudFunction.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/resources/META-INF/resources/crud/crudFunction.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/appUser.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/appUser.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/layout/mainTemplate.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/layout/mainTemplate.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/menuItem.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/src/main/webapp/xhtml/menuItem.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/classes/META-INF/resources/crud/crudFunction.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/classes/META-INF/resources/crud/crudFunction.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/mbean/AppUserCRUDMBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/mbean/AppUserCRUDMBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/mbean/MenuItemCRUDMBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/mbean/MenuItemCRUDMBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/mbean/MenuProviderMBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/classes/hu/ulyssys/java/course/maven/mbean/MenuProviderMBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/rest/CoreRestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/rest/CoreRestService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/rest/OwnerRestErvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/rest/OwnerRestErvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/car.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/car.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/owner.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/owner.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/plane.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/plane.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/ship.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/ship.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/META-INF/resources/crud/crudFunction.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/META-INF/resources/crud/crudFunction.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/mbean/AppUserCRUDMBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/mbean/AppUserCRUDMBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/mbean/MenuItemCRUDMBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/mbean/MenuItemCRUDMBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/mbean/MenuProviderMBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/WEB-INF/classes/hu/ulyssys/java/course/maven/mbean/MenuProviderMBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/appUser.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/appUser.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/layout/mainTemplate.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/layout/mainTemplate.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/menuItem.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-frontend/target/vehicle-frontend-1.0.0-SNAPSHOT/xhtml/menuItem.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,8 +59,8 @@
         <option value="HTTP Request" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="XHTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -156,7 +90,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vehicle-frontend/src/main/resources/META-INF/resources/crud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Ulyssys kurzus anyagok/java-prime-jpa-animal-ejb-demo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -190,17 +124,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 17.0.1.Final">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="car-rest#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/vehicle-frontend/car-rest.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -354,7 +277,10 @@
       <workItem from="1628492565455" duration="7468000" />
       <workItem from="1628618995073" duration="8139000" />
       <workItem from="1628850753554" duration="11655000" />
-      <workItem from="1629094318754" duration="7178000" />
+      <workItem from="1629094318754" duration="12880000" />
+      <workItem from="1629120223310" duration="4113000" />
+      <workItem from="1629182698833" duration="11015000" />
+      <workItem from="1629203099045" duration="801000" />
     </task>
     <servers />
   </component>

@@ -8,9 +8,17 @@ import javax.persistence.Table;
 public class MenuItem extends AbstractEntity {
 
     private String url;
-
     private String label;
 
+    private Boolean adminFunction;
+
+    public Boolean getAdminFunction() {
+        return adminFunction;
+    }
+
+    public void setAdminFunction(Boolean adminFunction) {
+        this.adminFunction = adminFunction;
+    }
 
     public String getUrl() {
         return url;

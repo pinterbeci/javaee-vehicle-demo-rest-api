@@ -15,47 +15,7 @@
     <ui:define name="content">
         <h:form id="form" style="margin: 20px auto;">
 
-            <!--
-                    composite komponens nélküli menü lista
-            <ui:include src="upMenu.xhtml"/>
-            <br/>
-            -->
             <p:growl id="growl" showDetail="false"/>
-            <!--   <p:toolbar>
-                   <p:toolbarGroup>
-                       <p:commandButton id="add" icon="pi pi-plus" process="@this" value="Új hozzáadása"
-                                        actionListener="#{menuItemCRUDMBean.initSave}" update="@([id$=menuForm])"
-                                        oncomplete="PF('menuDialog').show()"/>
-                       <p:commandButton disabled="#{menuItemCRUDMBean.selectedEntity.id==null}" id="delete"
-                                        icon="pi pi-times"
-                                        process="@this" value="Törlés" actionListener="#{menuItemCRUDMBean.remove}"
-                                        update="@form">
-                           <p:confirm header="Törlés" message="Biztos vagy benne?" icon="pi pi-times"/>
-                       </p:commandButton>
-                       <p:commandButton disabled="#{menuItemCRUDMBean.selectedEntity.id==null}" id="update" process="@this"
-                                        value="Módosítás" icon="pi pi-pencil" update="@([id$=menuForm])"
-                                        oncomplete="PF('menuDialog').show()"/>
-                   </p:toolbarGroup>
-                   <p:toolbarGroup align="right">
-                       <p:commandButton id="columntTogglerBtn" icon="pi pi-table"/>
-
-                       <p:columnToggler id="columntToggler" trigger="columntTogglerBtn" datasource="table"/>
-
-                       <p:commandButton value="XLS" styleClass="p-mr-2 p-mb-2">
-                           <p:dataExporter type="xls" target="table" fileName="export"/>
-                       </p:commandButton>
-
-                       <p:commandButton value="XLXS" styleClass="p-mr-2 p-mb-2">
-                           <p:dataExporter type="xlsxstream" target="table" fileName="export"/>
-                       </p:commandButton>
-
-                       &lt;!&ndash; TODO Utf-8 karakter &ndash;&gt;
-                       <p:commandButton value="PDF" styleClass="p-mr-2 p-mb-2">
-                           <p:dataExporter type="pdf" target="table" fileName="export"/>
-                       </p:commandButton>
-                   </p:toolbarGroup>
-               </p:toolbar>
-   -->
             <crud:crudFunction bean="#{menuItemCRUDMBean}" onCompleteShowDialog="PF('menuDialog').show()"
                                onCompleteUpdate="@([id$=menuForm])"/>
 
@@ -101,6 +61,9 @@
                     <p:inputText thousandSeparator="" decimalPlaces="0"
                                  value="#{menuItemCRUDMBean.selectedEntity.label}" required="true"
                                  requiredMessage="Label kötelező"/>
+
+                    <p:outputLabel value="Admin funkció"/>
+                    <p:selectBooleanCheckbox value="#{menuItemCRUDMBean.selectedEntity.adminFunction}"/>
 
                     <p:commandButton value="Mentés" icon="pi pi-save" actionListener="#{menuItemCRUDMBean.save()}"
                                      process="formPanel" update=":form"/>

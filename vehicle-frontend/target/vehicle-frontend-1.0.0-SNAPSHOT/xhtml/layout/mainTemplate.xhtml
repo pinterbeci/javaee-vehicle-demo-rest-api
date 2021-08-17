@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui"
-      xmlns:test="http://java.sun.com/jsf/composite/test"
+      xmlns:test="http://java.sun.com/jsf/composite/test" xmlns:f="http://java.sun.com/jsf/core"
       xml:lang="en" lang="en">
 <h:head>
     <title>
@@ -20,12 +20,13 @@
         -->
 
 
-    <ui:insert name="nemuBar">
+    <ui:insert name="menuBar">
 
         <!-- <test:testComponent usernameValue="Érték" usernameLabel="Lééébölll">
          </test:testComponent>
         -->
-        <h:form>
+
+        <h:form id="menuBarForm">
             <!--
             form-ba kell tenni az olyan komponenseket, amelyeket szerver oldalra összekötjük-->
             <p:menubar model="#{menuProviderMBean.getMenuModel()}">
@@ -35,8 +36,44 @@
                     <p:menuitem outcome="/xhtml/plane.xhtml" value="Plane"/>
                     <p:menuitem outcome="/xhtml/ship.xhtml" value="Ship"/>
                     <p:menuitem outcome="/xhtml/owner.xhtml" value="Owner"/>-->
+
+                <f:facet name="options">
+                    <p:commandButton rendered="#{loggedInUserBean.loggedIn==false}"
+                                     oncomplete="PF('loginDialog').show()" value="Bejelentkezés"
+                                     icon="pi pi-fw pi-sign-in"
+                                     styleClass="ui-button-info"/>
+                    <p:outputLabel rendered="#{loggedInUserBean.loggedIn==true}"
+                                   value="#{loggedInUserBean.loggedInUserModel.username} (#{loggedInUserBean.loggedInUserModel.role})"
+                                   style="padding: 5px 10px; margin: 5px 10px; font-weight: bold; font-style: inherit"/>
+
+                    <p:commandButton actionListener="#{loginRequestBean.doLogout()}"
+                                     rendered="#{loggedInUserBean.loggedIn==true}" value="Kijelentkezés"
+                                     icon="pi pi-fw pi-sign-out"
+                                     styleClass="ui-button-info" update="@form @([id$=loginForm])  @([id$crudFunctionsToolbar])"/>
+                </f:facet>
+
             </p:menubar>
         </h:form>
+
+        <p:dialog modal="true" widgetVar="loginDialog" id="loginDialog" header="Belépés">
+            <h:form id="loginForm" style="width: 500px; text-align: center; ">
+
+                <p:outputLabel value="Felhasználó név" style="text-align: center"/>
+                <p:inputText value="#{loginRequestBean.loginModel.username}"
+                             style="margin: 10px"/>
+
+                <br/>
+
+                <p:outputLabel value="Jelszó" style="padding-right: 65px"/>
+                <p:password value="#{loginRequestBean.loginModel.password}"
+                            style="margin: 10px auto"/>
+
+                <p:separator style="width: 5px; background: gray; "/>
+                <p:commandButton value="Belépés" actionListener="#{loginRequestBean.doLogin}"
+                                 update="@([id$=menuBarForm]) @([id$crudFunctionsToolbar])"
+                                 style="align-content: center"/>
+            </h:form>
+        </p:dialog>
     </ui:insert>
 
     <ui:insert name="content"/>

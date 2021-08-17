@@ -4,6 +4,8 @@ import hu.ulyssys.java.course.maven.entity.MenuItem;
 import hu.ulyssys.java.course.maven.service.CoreService;
 import hu.ulyssys.java.course.maven.service.MenuItemService;
 
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -15,8 +17,14 @@ public class MenuItemCRUDMBean extends CoreCRUDMBean<MenuItem> implements Serial
 
 
     @Inject
-    public MenuItemCRUDMBean(MenuItemService service) {
+    public MenuItemCRUDMBean(MenuItemService service, LoggedInUserBean loggedInUserBean) {
         super(service);
+
+        if (!loggedInUserBean.isAdmin()) {
+            FacesContext.getCurrentInstance().addMessage("",
+                    new FacesMessage("Nincs jogosultsága ehhez a művelethez!"));
+            throw new SecurityException("Nincs jogosultsága ehhez a művelethez!");
+        }
     }
 
     @Override
